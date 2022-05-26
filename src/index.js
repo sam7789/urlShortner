@@ -34,6 +34,9 @@ app.get("/api/:short", async (req, res) => {
     if (!urlData) {
       res.status(404).send("Not Found");
     } else {
+      let updateData = await UrlModel.findOneAndUpdate({
+        clicks: urlData.clicks + 1,
+      });
       console.log(urlData.actual);
       res.redirect(302, urlData.actual);
     }
