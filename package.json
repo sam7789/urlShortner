@@ -14,7 +14,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.21.1",
     "mongoose": "^6.3.4",
-    "nodemon": "^2.0.16",
+    "nodemon": "^2.0.22",
     "shortid": "^2.2.16"
   }
 }
